@@ -30,13 +30,13 @@ stages{
   sh  "mvn clean package"
   }
   }
-	
+/*	
  stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=maven-web-application_lti"
   }
   }
-  /*
+  
   stage('UploadArtifactsIntoNexus'){
   steps{
   sh  "mvn clean deploy"
